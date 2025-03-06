@@ -42,7 +42,7 @@ public class ProductController {
 
     @GetMapping("/test")
     public  String test(){
-        return "<h1>Test Success</h1>";
+        return "<h1>Test Success!!!</h1>";
     }
 
     @GetMapping("/bestPro")
