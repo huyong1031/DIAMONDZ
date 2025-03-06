@@ -3,7 +3,7 @@ name: Deploy to EC2 - teamdiaSecure
 on:
   push:
     branches:
-      - hunsik   # main 브랜치에 push 될 때 아래 Workflow 를 실행한다.
+      - main   # main 브랜치에 push 될 때 아래 Workflow 를 실행한다.
 
 jobs:
   deploy:   # 이 이름은 바뀔 수 있다.
@@ -19,9 +19,9 @@ jobs:
           script_stop: true  # 아래 script 중 실패하는 명령이 하나라도 있으면 실패로 처리
 
           script: |
-            cd /home/ubuntu/teamdiaSecure
+            cd /home/ubuntu/BackEndServer
            
-            git pull origin hunsik
+            git pull origin main
             ./gradlew clean build
             sudo fuser -k -n tcp 8070 || true      
             # || true : 8070에 종료시킬 프로세스가 없더라도 에러없이 정상 실행

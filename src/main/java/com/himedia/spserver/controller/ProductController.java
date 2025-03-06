@@ -40,6 +40,11 @@ public class ProductController {
     @Autowired
     ProductRepository productRepository;
 
+    @GetMapping("/test")
+    public  String test(){
+        return "<h1>Test Success</h1>";
+    }
+
     @GetMapping("/bestPro")
     public HashMap<String,Object> getBestPro(){
         HashMap<String,Object> result = new HashMap<>();
