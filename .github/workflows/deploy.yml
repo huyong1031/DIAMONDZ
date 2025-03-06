@@ -17,7 +17,6 @@ jobs:
           key:  ${{ secrets.EC2_PRIVATE_KEY }} # EC2의 접속을 위한 Key 파일의 내용  ==> 키페어를 메모장으로 열어서 입력
 
           script_stop: true  # 아래 script 중 실패하는 명령이 하나라도 있으면 실패로 처리
-
           script: |
             cd /home/ubuntu/BackEndServer
            
