@@ -97,7 +97,7 @@ public class JWTCheckFilter extends OncePerRequestFilter {
         if(request.getMethod().equals("OPTIONS"))
             return true;
 
-        if (path.startsWith("/product/test"))
+        if (path.startsWith("/api/product/test"))
             return true;
 
         if (path.startsWith("/member/loginLocal"))
@@ -119,19 +119,19 @@ public class JWTCheckFilter extends OncePerRequestFilter {
             return true;
 
         // 상품 관련 요청들도 인증 없이 접근할 수 있도록 설정
-        if (path.startsWith("/product/bestPro"))
+        if (path.startsWith("/api/product/bestPro"))
             return true;
 
-        if (path.startsWith("/product/newPro"))
+        if (path.startsWith("/api/product/newPro"))
             return true;
 
-        if (path.startsWith("/product/selectPro"))
+        if (path.startsWith("/api/product/selectPro"))
             return true;
 
-        if (path.startsWith("/product/categoryList"))
+        if (path.startsWith("/api/product/categoryList"))
             return true;
 
-        if (path.startsWith("/product/search"))
+        if (path.startsWith("/api/product/search"))
             return true;
 
         if (path.startsWith("/product/getProduct"))
