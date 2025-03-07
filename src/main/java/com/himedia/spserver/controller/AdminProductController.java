@@ -25,7 +25,7 @@ import org.springframework.util.ResourceUtils; // ResourceUtils import 추가
 
 
 @RestController
-@RequestMapping("/admin/product")
+@RequestMapping("/api/admin/product")
 public class AdminProductController {
 
     @Autowired
