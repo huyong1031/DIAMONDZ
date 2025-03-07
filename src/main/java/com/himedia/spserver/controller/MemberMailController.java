@@ -10,7 +10,7 @@ import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:3000") // React에서 요청 허용
 @RestController
-@RequestMapping("/member/auth")
+@RequestMapping("/api/member/auth")
 @RequiredArgsConstructor
 public class MemberMailController {
 

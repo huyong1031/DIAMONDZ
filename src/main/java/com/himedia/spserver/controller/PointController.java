@@ -16,7 +16,7 @@ import java.math.BigDecimal;
 import java.util.*;
 
 @RestController
-@RequestMapping("/points")
+@RequestMapping("/api/points")
 public class PointController {
 
     @Autowired
