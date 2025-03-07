@@ -48,6 +48,15 @@ public class CustomSecurityConfig {
                 }
         );
         //--------------------------------------------------------------
+        // ✅ API 요청에 대한 인증 설정 추가
+        http.authorizeHttpRequests(
+                auth -> auth
+                        .requestMatchers("/api/member/auth/**").permitAll() // 로그인, 회원가입 관련 API 허용
+                        .requestMatchers("/api/product/**").permitAll() // 상품 관련 API 허용
+                        .requestMatchers("/api/**").authenticated() // 그 외 모든 API는 인증 필요
+                        .anyRequest().permitAll() // 기타 요청은 기본적으로 허용
+        );
+        //--------------------------------------------------------------
         http.addFilterBefore(new JWTCheckFilter(), UsernamePasswordAuthenticationFilter.class);
         //--------------------------------------------------------------
         http.exceptionHandling(config -> {
