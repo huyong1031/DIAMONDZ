@@ -100,22 +100,22 @@ public class JWTCheckFilter extends OncePerRequestFilter {
         if (path.startsWith("/api/product/test"))
             return true;
 
-        if (path.startsWith("/member/loginLocal"))
+        if (path.startsWith("/api/member/loginLocal"))
             return true;
 
-        if (path.startsWith("/member/register"))
+        if (path.startsWith("/api/member/register"))
             return true;
 
-        if (path.startsWith("/member/idCheck"))
+        if (path.startsWith("/api/member/idCheck"))
             return true;
 
-        if (path.startsWith("/member/kakaoLogin"))
+        if (path.startsWith("/api/member/kakaoLogin"))
             return true;
 
-        if (path.startsWith("/member/verifyKakaoUser"))
+        if (path.startsWith("/api/member/verifyKakaoUser"))
             return true;
 
-        if(path.startsWith("/member/refresh"))
+        if(path.startsWith("/api/member/refresh"))
             return true;
 
         // 상품 관련 요청들도 인증 없이 접근할 수 있도록 설정
@@ -134,27 +134,27 @@ public class JWTCheckFilter extends OncePerRequestFilter {
         if (path.startsWith("/api/product/search"))
             return true;
 
-        if (path.startsWith("/product/getProduct"))
+        if (path.startsWith("/api/product/getProduct"))
             return true;
 
-        if (path.startsWith("/product/search"))
+        if (path.startsWith("/api/product/search"))
             return true;
 
         // 이미지 관련 요청들
 
-        if(path.startsWith("/customer_images/"))
+        if(path.startsWith("/api/customer_images/"))
             return true;
 
-        if(path.startsWith("/product_hover/"))
+        if(path.startsWith("/api/product_hover/"))
             return true;
 
-        if(path.startsWith("/product_images/"))
+        if(path.startsWith("/api/product_images/"))
             return true;
 
-        if(path.startsWith("/product_infoimages/"))
+        if(path.startsWith("/api/product_infoimages/"))
             return true;
 
-        if(path.startsWith("/favicon.ico"))
+        if(path.startsWith("/api/favicon.ico"))
             return true;
 
         // 주문 관련 요청도 인증 없이 접근할 수 있도록 설정
