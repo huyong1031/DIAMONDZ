@@ -1,0 +1,307 @@
+/* ✅ 전체 컨테이너 */
+.main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* ✅ 메인 카테고리 (BEST, NEW, 반지, 목걸이, 귀걸이) */
+.main-category {
+    width: 44%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 40px;
+    flex-wrap: nowrap; /* ✅ 기본적으로 한 줄 유지 */
+    gap: 10px;
+}
+
+.main-category p {
+    color: black;
+    margin-top: 10px;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+/* ✅ 카테고리 이미지 (BEST, NEW, 반지, 목걸이, 귀걸이) */
+#best-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    flex-shrink: 0;
+}
+
+#best-link img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 10%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+#best-link:hover img {
+    transform: scale(1.1);
+}
+
+/* ✅ BEST PRODUCT 및 NEW PRODUCT 스타일 */
+h1.best-title, h1.new-title {
+    font-weight: bold;
+    font-size: clamp(28px, 4vw, 60px);  /* 최소 28px, 최대 50px */
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    margin: 60px auto 40px auto;
+    padding-bottom: 5px;
+}
+
+/* ✅ 밑줄 효과 (글자와 살짝 겹치게) */
+h1.best-title::after, h1.new-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 3px;  /* ✅ 기본 위치 (글자와 겹치게) */
+    width: 100%;
+    height: 10px;  /* ✅ 기본 밑줄 높이 */
+    background: #C0C0C0; /* ✅ 원하는 색상 */
+    opacity: 0.6; /* ✅ 반투명 효과 */
+    z-index: -1; /* ✅ 글자 아래에 위치 */
+}
+
+/* ✅ 데스크탑 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+    h1.best-title, h1.new-title {
+        font-size: 60px;
+    }
+
+    h1.best-title::after, h1.new-title::after {
+        height: 8px;  /* ✅ 조금 얇은 밑줄 */
+        bottom: 5px;  /* ✅ 살짝 더 겹치도록 */
+    }
+}
+
+/* ✅ 태블릿 (768px ~ 1023px) */
+@media screen and (max-width: 1023px) {
+    h1.best-title, h1.new-title {
+        font-size: 40px;
+    }
+
+    h1.best-title::after, h1.new-title::after {
+        height: 7px;
+        bottom: 4px;
+    }
+}
+
+/* ✅ 모바일 (480px 이하) */
+@media screen and (max-width: 480px) {
+    h1.best-title, h1.new-title {
+        font-size: 32px;
+    }
+
+    h1.best-title::after, h1.new-title::after {
+        height: 5px; /* ✅ 모바일에서는 줄이 너무 두껍지 않도록 */
+        bottom: 2px; /* ✅ 조금 더 겹치게 */
+    }
+}
+/* ✅ 상품 리스트 스타일 */
+.itemlist {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+/* ✅ 개별 상품 스타일 */
+.item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 23%;
+}
+
+.item img {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.pro-price {
+    color: #B22222; /* Firebrick 컬러, 더 고급스럽고 가독성이 좋음 */
+    font-size: 20px; /* 너무 크면 조정 */
+}
+
+
+.name {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+/* ✅ 전체보기 버튼 */
+#all-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    color: black;
+    border: 3px solid black;
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#all-link:hover {
+    background-color: black;
+    color: white;
+    border-color: white;
+    transition: 0.3s;
+}
+
+/* ✅ 이미지 컨테이너 & 퀵뷰 스타일 */
+.image-container {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+}
+
+.quickview {
+    display: flex;
+    position: absolute;
+    width: 102%;
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    background-color: #f8f9fa;
+    color: #000000;
+    padding: 5px 10px;
+    font-weight: bold;
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.image-container:hover .quickview {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-53px);
+}
+
+/* 📌 ✅ 반응형 미디어 쿼리 */
+
+/* ✅ 모바일 (480px 이하) → 2줄 유지, 더 작아짐 */
+@media screen and (max-width: 480px) {
+    .main-category {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #best-link {
+        width: 100px;
+    }
+
+
+
+    .itemlist {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .pro-price {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    #all-link {
+        width: 200px;
+        font-size: 16px;
+    }
+}
+
+/* ✅ 태블릿 (481px ~ 768px) → 2줄로 배치 */
+@media screen and (max-width: 768px) {
+    .main-category {
+        width: 90%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #best-link {
+        width: 130px;
+    }
+
+
+
+    .item {
+        width: 48%;
+    }
+
+    .pro-price {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 20px;
+    }
+}
+
+/* ✅ 작은 데스크탑 (769px ~ 1023px) */
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    .main-category {
+        width: 50%;
+    }
+
+    #best-link {
+        width: 140px;
+    }
+
+
+
+    .item {
+        width: 30%;
+    }
+
+    .pro-price {
+        font-size: 21px;
+    }
+
+    .name {
+        font-size: 21px;
+    }
+}
+
+/* ✅ 데스크탑 (1024px 이상) */
+@media screen and (min-width: 1024px) {
+    .main-category {
+        width: 44%;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    #best-link {
+        width: 150px;
+    }
+
+
+}

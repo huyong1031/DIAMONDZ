@@ -1,0 +1,349 @@
+/* 🛒 장바구니 전체 레이아웃 */
+.cartlist-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px auto 0;
+    padding: 0;
+    background: white;
+    box-shadow: none;
+  }
+  
+  /* 🛍 장바구니 헤더 */
+  .cartlist-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  
+  
+  .cartlist-header::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+  }
+  
+  .cartlist-header-right {
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .cartlist-header-right p {
+    font-weight: bold;
+  }
+  
+  /* 📋 테이블 스타일 */
+  .cartlist-table {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: white;
+    text-align: left;
+  }
+  
+  /* 📌 테이블 헤더 */
+  .cartlist-product-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 0 20px;
+  }
+  
+  .cartlist-product-header::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(125, 125, 125, 0.1);
+  }
+  
+  .cartlist-product-right {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+  }
+  
+  .cartlist-product-right p {
+    font-weight: bold;
+    font-size: 17px;
+  }
+  
+  /* 🏷 상품 목록 */
+  .cartlist-row {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+  }
+  
+  .cartlist-row::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(125, 125, 125, 0.1);
+  }
+  
+  /* 🖼 상품 정보 */
+  .cartlist-product-info {
+    display: flex;
+    align-items: center;
+    width: 60%;
+  }
+  
+  .cartlist-product-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .cartlist-product-detail {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    gap: 10px;
+  }
+  
+  .cartlist-product-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .cartlist-product-link:hover {
+    text-decoration: underline;
+  }
+  
+  .cartlist-product-option {
+    color: rgb(155, 155, 155);
+    font-size: 14px;
+  }
+  
+  .cartlist-product-price {
+    font-weight: 500;
+  }
+  
+  /* 📌 오른쪽 정보 (수량, 가격 등) */
+  .cartlist-info-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+    margin-right: 33px;
+  }
+  
+  .cartlist-checkbox {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid rgb(229, 229, 229);
+    background-color: white;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+  
+    /* ✅ 체크박스를 부모 요소 기준으로 정렬 */
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .cartlist-checkbox:checked {
+    border-color: #7000ff;
+  }
+  
+/* ✅ 체크된 상태에서 커스텀 체크박스 이미지 표시 */
+.cartlist-checkbox:checked::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 중앙 정렬 */
+    width: 22px;
+    height: 22px;
+    background-image: url("../../public/imgs/check.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* 💰 총 가격 */
+  .cartlist-total-price {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .cartlist-total-price-label {
+    color: rgb(155, 155, 155);
+    margin-right: 10px;
+  }
+  
+  /* 🎯 버튼 스타일 */
+  .cartlist-button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+  }
+  
+  .cartlist-button {
+    flex: 1;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .cartlist-continue-shopping {
+    background: #ffffff;
+    color: #1a1a1a;
+    border: 1px solid #1a1a1a;
+  }
+  
+  .cartlist-order-button {
+    background: #1a1a1a;
+    color: white;
+  }
+  
+  .cartlist-delete-button {
+    background: white;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    padding: 8px 12px;
+    cursor: pointer;
+  }
+  
+  /* 📱 반응형 디자인 */
+  @media (max-width: 1200px) {
+    .cartlist-container {
+      width: 80%;
+    }
+  }
+  
+/* 📱 태블릿 (768px 이하) */
+@media (max-width: 768px) {
+    .cartlist-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .cartlist-product-info {
+        width: 70%; /* ✅ 상품 정보 비율 조정 */
+    }
+
+    .cartlist-info-right {
+        width: 30%; /* ✅ 오른쪽 가격 정보 비율 조정 */
+        text-align: right;
+    }
+
+    .cartlist-button-container {
+        flex-direction: column;
+    }
+
+    .cartlist-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* 📱 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    .cartlist-container {
+        padding: 5px;
+    }
+
+    .cartlist-product-header {
+        font-size: 14px;
+        margin-bottom: 15px;
+    }
+
+    /* ✅ 상품 목록 한 줄 정렬 유지 */
+    .cartlist-row {
+        display: flex;
+        flex-direction: row !important;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 0;
+        flex-wrap: nowrap; /* ✅ 줄 바꿈 방지 */
+    }
+
+    /* ✅ 상품 정보 크기 조정 */
+    .cartlist-product-info {
+        display: flex;
+        align-items: center;
+        flex-direction: row !important;
+        width: 65%;
+    }
+
+    /* ✅ 상품 이미지 크기 축소 */
+    .cartlist-product-image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .cartlist-product-detail {
+        margin-left: 10px;
+    }
+
+    /* ✅ 폰트 크기 축소 */
+    .cartlist-product-link {
+        font-size: 12px;
+    }
+
+    .cartlist-product-option {
+        font-size: 11px;
+    }
+
+    .cartlist-product-price {
+        font-size: 12px;
+    }
+
+    /* ✅ 오른쪽 가격 정보 정렬 */
+    .cartlist-info-right {
+        width: 35%;
+        font-size: 11px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .cartlist-total-price {
+        font-size: 14px;
+    }
+
+    /* ✅ 버튼 세로 정렬 유지 */
+    .cartlist-button-container {
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .cartlist-button {
+        width: 100%;
+        font-size: 13px;
+        padding: 10px;
+    }
+}

@@ -1,0 +1,285 @@
+/* ✅ 네비게이션 컨테이너 */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    /* border: 1px solid blue; */
+  }
+  
+  /* ✅ 네비게이션 바 */
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    /* border: 1px solid purple; */
+  }
+  
+  /* ✅ 네비게이션 좌측 (로고, 카테고리) */
+  .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 0.1;
+    /* gap: 20px; */
+    /* border: 1px solid red; */
+  }
+  
+  /* ✅ 중앙 네비게이션 (검색창) */
+  .nav-center {
+    display: flex;
+    align-items: center;
+    flex-grow: 0.5;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+  }
+
+  
+  /* ✅ 우측 네비게이션 (로그인, 마이페이지, 장바구니) */
+  .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-grow: 0.3;
+    gap: 15px;
+    /* border: 1px solid red; */
+  }
+  
+/* ✅ 네비게이션 공통 링크 스타일 (호버 효과 추가) */
+.nav-link, 
+.nav-left a, 
+.nav-right a, 
+.nav-center a {
+    color: black !important;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+/* ✅ 방문한 링크에도 동일한 색상 적용 */
+.nav-link:visited, 
+.nav-left a:visited, 
+.nav-right a:visited, 
+.nav-center a:visited {
+    color: black !important;
+}
+
+/* ✅ 네비게이션 링크 호버 효과 */
+.nav-link:hover, 
+.nav-left a:hover, 
+.nav-right a:hover, 
+.nav-center a:hover {
+    color: #868e96 !important;
+    transform: scale(1.1);
+}
+
+#category-link,
+#menu-link {
+    font-size: 18px;
+    color: black;
+}
+
+
+/* ✅ 닉네임 스타일 */
+.nav-nickname {
+    font-size: 14px;
+    color: black !important;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+}
+  /* ✅ 로고 */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 60px;
+    overflow: hidden;
+  }
+  
+  #nav-logo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* ✅ 검색창 */
+  .search-container {
+    position: relative;
+    width: 280px;
+  }
+  /* ✅ 검색 입력 칸 밑줄 스타일 */
+.search {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 36px;
+    background-color: transparent; /* ✅ 배경 투명 */
+    border: none; /* ✅ 기존 테두리 제거 */
+    border-bottom: 1px solid #ddd; /* ✅ 밑줄 추가 */
+    padding: 5px 12px;
+  }
+  
+  .search input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px;
+  }
+  
+  /* ✅ 검색 아이콘 스타일 */
+  .search i {
+    font-size: 20px;
+    color: #888;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .search i:hover {
+    color: #000;
+  }
+  
+  /* ✅ 추천 키워드 스타일 (기존 스타일 유지) */
+  .search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 6px;
+    justify-content: center;
+  }
+  
+  .search-tag {
+    background: #f5f5f5;
+    border-radius: 12px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    transition: background 0.2s;
+    border: 1px solid #ddd;
+  }
+  
+  .search-tag:hover {
+    background: #e0e0e0;
+  }
+  
+/* ✅ 아이콘 컨테이너 */
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+  .nav-item i {
+    font-size: 30px;
+    color: black;
+  }
+  
+  .nav-item:hover i {
+    color: #868e96;
+    transform: scale(1.1);
+  }
+  
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40%;
+    gap: 10px;
+    /* border: 1px solid green; */
+}
+
+
+.nav-text {
+    font-size: 12px;
+    font-weight: normal !important;
+    color: #868e96;
+    margin-top: 4px;
+    text-align: center;
+}
+  
+  /* ✅ 반응형 - 태블릿 (768px 이하) */
+  @media screen and (max-width: 768px) {
+    .nav-container {
+      flex-direction: column;
+      height: auto;
+      padding: 10px;
+    }
+  
+    .nav-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-left,
+    .nav-center,
+    .nav-right {
+      width: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .nav-nickname {
+      max-width: 120px;
+    }
+  
+    .search-container {
+      width: 220px;
+    }
+  
+    .nav-item {
+      width: 40px;
+    }
+  
+    .nav-item i {
+      font-size: 24px;
+    }
+  }
+  
+  /* ✅ 반응형 - 모바일 (480px 이하) */
+  @media screen and (max-width: 480px) {
+    .logo img {
+      max-width: 140px;
+      height: 50px;
+    }
+  
+    .search {
+      max-width: 200px;
+      padding: 5px 8px;
+    }
+  
+    .search input {
+      font-size: 14px;
+      padding: 5px 25px 5px 6px;
+    }
+  
+    .search i {
+      font-size: 18px;
+    }
+  
+    .nav-right {
+      gap: 5px;
+    }
+  
+    .nav-item i {
+      font-size: 22px;
+    }
+  }
+  
