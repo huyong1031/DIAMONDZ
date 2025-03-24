@@ -13,6 +13,9 @@
 ![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/productdetail.gif)
 
 
+![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/order.gif)
+
+
 ## 프론트엔드 기술
 - HTML5
 - CSS3
