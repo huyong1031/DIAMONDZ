@@ -9,6 +9,10 @@
 ## 구동모습
 ![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/mainpage.gif)
 
+
+![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/productdetail.gif)
+
+
 ## 프론트엔드 기술
 - HTML5
 - CSS3
