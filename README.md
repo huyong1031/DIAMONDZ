@@ -8,7 +8,10 @@
 
 ## 메인페이지
 
-![메인 이미지](https://github.com/huyong1031/DIAMONDZ/blob/main/DIAMONDZ.png)
+<p align="center">
+  <img src="https://github.com/huyong1031/DIAMONDZ/blob/main/DIAMONDZ.png" alt="메인 이미지">
+</p>
+
 
 
 ## 구동모습
