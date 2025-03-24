@@ -7,7 +7,7 @@
 각 카테고리별로 상품을 쉽게 볼 수 있는 UI를 구축했습니다. 많은 이용 부탁드립니다
 
 ## 구동모습
-![구동모습](example.gif)
+![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/mainpage.gif)
 
 ## 프론트엔드 기술
 - HTML5
