@@ -6,6 +6,11 @@
 
 각 카테고리별로 상품을 쉽게 볼 수 있는 UI를 구축했습니다. 많은 이용 부탁드립니다
 
+## 메인페이지
+
+![메인 이미지](https://github.com/huyong1031/DIAMONDZ/blob/main/DIAMONDZ.png)
+
+
 ## 구동모습
 ![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/mainpage.gif)
 
@@ -31,7 +36,6 @@
 - 메인 페이지 디자인
 - 상품 상세 페이지
 - 주문 페이지
-- 리뷰 작성
 - Security
 
 ## 구동방법
