@@ -15,13 +15,19 @@
 
 
 ## 구동모습
-![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/mainpage.gif)
 
+<p align="center">
+  <img src="https://github.com/huyong1031/DIAMONDZ/blob/main/mainpage.gif" alt="구동모습">
+</p>
 
-![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/productdetail.gif)
+<p align="center">
+  <img src="https://github.com/huyong1031/DIAMONDZ/blob/main/productdetail.gif" alt="구동모습">
+</p>
 
+<p align="center">
+  <img src="https://github.com/huyong1031/DIAMONDZ/blob/main/order.gif" alt="구동모습">
+</p>
 
-![구동모습](https://github.com/huyong1031/DIAMONDZ/blob/main/order.gif)
 
 
 ## 프론트엔드 기술
