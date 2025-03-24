@@ -1,0 +1,149 @@
+[33mcommit c2c823491e6206f3edf2559e59c76f09ab2606f5[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: Lee Huyong <e9124@naver.com>
+Date:   Mon Mar 24 21:40:09 2025 +0900
+
+    Add BackEndServer files
+
+[33mcommit 5ce834c61e2332701ca5906fb2c33a2101f89ae3[m
+Author: Lee Huyong <e9124@naver.com>
+Date:   Mon Mar 24 21:21:29 2025 +0900
+
+    Update project files: deleted deploy.yml and added new folders
+
+[33mcommit 4c9750c2400170d37e105aa89f44eb61a2ecadeb[m
+Merge: cbd560e f8ca9f8
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 13:15:38 2025 +0900
+
+    Develop: fix: 백엔드 부분에 "/api" 요청에 대한 문구 추가
+    
+    Develop: fix: 백엔드 부분에 "/api" 요청에 대한 문구 추가
+
+[33mcommit f8ca9f88d8c43185e03fdb01842f9321b32e316c[m
+Merge: 76a3fe3 47b7425
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 13:14:57 2025 +0900
+
+    Merge pull request #9 from Team-Dia/hunsik
+    
+    fix: 백엔드 부분에 "/api" 요청에 대한 문구 추가
+
+[33mcommit 47b7425cdaf5685eb330e02a957b76c4e1e5c2bc[m
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 13:10:59 2025 +0900
+
+    fix: 백엔드 부분에 "/api" 요청에 대한 문구 추가
+
+[33mcommit cbd560e773882a757addd83347aefff5793fb3b8[m
+Merge: be1ca54 76a3fe3
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 12:26:08 2025 +0900
+
+    Merge pull request #8 from Team-Dia/develop
+    
+    Develop: fix: CustomSecurityConfig.java 파일에 API 요청에 대한 인증 설정 추가
+
+[33mcommit 76a3fe31b10898a0981e068f71ea85360353a5c0[m
+Merge: d48c7aa e44962c
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 12:25:34 2025 +0900
+
+    Merge pull request #7 from Team-Dia/hunsik
+    
+    fix: CustomSecurityConfig.java 파일에 API 요청에 대한 인증 설정 추가
+
+[33mcommit e44962cc1782069c713bf1af663bf99ea486e649[m
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 12:24:35 2025 +0900
+
+    fix: CustomSecurityConfig.java 파일에 API 요청에 대한 인증 설정 추가
+
+[33mcommit be1ca54f608be71936b872a43c916c447aab6feb[m
+Merge: 812e7a7 d48c7aa
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 11:32:44 2025 +0900
+
+    Merge pull request #6 from Team-Dia/develop
+    
+    Develop: hunsik test: /api 경로만 추가해봄
+
+[33mcommit d48c7aa83153065ca0ae75dd422208023c4e2b6c[m
+Merge: 164b822 f35db5c
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 11:32:15 2025 +0900
+
+    Merge pull request #5 from Team-Dia/hunsik
+    
+    hunsik test: /api 경로만 추가해봄
+
+[33mcommit f35db5cfa3b0bc38bd12dee1c45ed9478362edef[m
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Fri Mar 7 11:31:19 2025 +0900
+
+    hunsik test: /api 경로만 추가해봄
+
+[33mcommit 812e7a70f9300b19e4def74cb35c410dfec793d9[m
+Merge: 9c547af 164b822
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Thu Mar 6 16:35:08 2025 +0900
+
+    Merge pull request #4 from Team-Dia/develop
+    
+    test2
+
+[33mcommit 164b822441a4d36f1c76fa02f5b2e55a16ad5d5f[m
+Merge: 7468a6a cef32df
+Author: chiwon <cwpark1013@naver.com>
+Date:   Thu Mar 6 16:34:20 2025 +0900
+
+    Merge pull request #3 from Team-Dia/chiwon
+    
+    test2
+
+[33mcommit cef32dfb0cdc46397587ae45c4343b23ae57505d[m
+Author: chiwon <cwpark1013@naver.com>
+Date:   Thu Mar 6 16:32:15 2025 +0900
+
+    test2
+
+[33mcommit 9c547afa0110c987af473605ee360303d8022200[m
+Merge: 828f47d 7468a6a
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Thu Mar 6 16:26:43 2025 +0900
+
+    Merge pull request #2 from Team-Dia/develop
+    
+    Test1
+
+[33mcommit 7468a6a8dc0c639f7df7988b0793090852294402[m
+Merge: 828f47d fdcab04
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Thu Mar 6 16:26:14 2025 +0900
+
+    Merge pull request #1 from Team-Dia/chiwon
+    
+    test1
+
+[33mcommit fdcab04ff51d123b0c6c086d73570a22094e971f[m
+Author: chiwon <cwpark1013@naver.com>
+Date:   Thu Mar 6 16:20:32 2025 +0900
+
+    test1
+
+[33mcommit 828f47d8d87acb7e682169a6ee0ca68dd510b746[m
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Thu Mar 6 16:05:09 2025 +0900
+
+    action start
+
+[33mcommit c82036a3520fb361e60ebb273ff1cbe94a05714a[m
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Thu Mar 6 16:02:54 2025 +0900
+
+    action start
+
+[33mcommit f8ac82684ca9c106df036616c529c980cd9273c4[m
+Author: HUNSIKHAM <hamhsik1222@naver.com>
+Date:   Thu Mar 6 15:16:48 2025 +0900
+
+    first
